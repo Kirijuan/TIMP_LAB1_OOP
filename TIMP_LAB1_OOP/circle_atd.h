@@ -12,6 +12,7 @@ namespace simple_shapes {
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst); // ввод
 		void Out(ofstream &ofst); // вывод
+		int Perimeter();
 		circle() {} // создание без инициализации.
 	};
 } // end simple_shapes namespace

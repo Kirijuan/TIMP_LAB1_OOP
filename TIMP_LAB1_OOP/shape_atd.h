@@ -11,8 +11,10 @@ namespace simple_shapes {
 	public:
 		// иденитфикация, порождение и ввод фигуры из потока
 		static shape* In(ifstream &ifst);
+		virtual int Perimeter() = 0;
 		virtual void InData(ifstream &ifst) = 0; // ввод
 		virtual void Out(ofstream &ofst) = 0; // вывод
+		bool Compare(shape &other);
 	};
 } // end simple_shapes namespace
 #endif

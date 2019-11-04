@@ -9,15 +9,15 @@ namespace simple_shapes {
 		int len; // текущая длина
 		shape *cont[max_len];
 	public:
-		void In(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		void Clear(); // очистка контейнера от фигур
-		container(); // инициализация контейнера
-
-		~container()
-		{
-			Clear();
-		} // утилизация контейнера
+		void In(ifstream &ifst);
+		void Out(ofstream &ofst);
+		
+		void Perimeter(ofstream &ofst);
+		void Clear();
+		void Sort(); 
+		container();
+		~container() { Clear(); }
 	};
+	//--------------
 } // end simple_shapes namespace
 #endif
