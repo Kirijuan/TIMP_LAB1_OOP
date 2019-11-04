@@ -14,7 +14,6 @@ namespace simple_shapes {
 		virtual int Perimeter() = 0;
 		virtual void InData(ifstream &ifst) = 0; // ввод
 		virtual void Out(ofstream &ofst) = 0; // вывод
-		bool Compare(shape &other);
 	};
 } // end simple_shapes namespace
 #endif

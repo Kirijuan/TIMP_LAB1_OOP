@@ -14,7 +14,6 @@ namespace simple_shapes {
 		
 		void Perimeter(ofstream &ofst);
 		void Clear();
-		void Sort(); 
 		container();
 		~container() { Clear(); }
 	};
