@@ -6,6 +6,7 @@ namespace simple_shapes {
 	// ¬вод параметров пр€моугольника
 	void rectangle::InData(ifstream &ifst) 
 	{
-		ifst >> x >> y >> colour;
+		ifst >> x >> y;
+		shape::InData(ifst);
 	}
 } // end simple_shapes namespace
