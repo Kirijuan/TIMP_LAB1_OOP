@@ -3,8 +3,8 @@
 #include "circle_atd.h"
 using namespace std;
 namespace simple_shapes {
-	// ¬вод параметров треугольника
+	// ¬вод параметров 
 	void circle::InData(ifstream &ifst) {
-		ifst >> x >> R >> colour;
+		ifst >> x >> y >> R >> colour;
 	}
 } // end simple_shapes namespace
